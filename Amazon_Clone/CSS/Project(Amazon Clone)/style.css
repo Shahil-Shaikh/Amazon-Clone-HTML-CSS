@@ -1,0 +1,485 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    padding: 0px;
+    margin: 0px;
+    border:border-box;
+}
+body {
+    background-color: #e3e6e6;
+}
+/***************************************************************Top Header Start***************************************************************/
+
+#headerTop{
+    display: flex;
+    flex-direction: row;
+    background-color: #0F1111;
+}
+
+/* ----------------------------------------Navbar Left---------------------------------------- */
+#navleft{
+    height:60px;
+    width:214.69px;
+    
+    display: flex;
+    align-items: center;
+}
+.border{border: 1px solid transparent;}
+.border:hover{ border:1px solid white;}
+
+
+
+#logo {
+    height: 48px;
+    width: 99px;
+    padding: 0px 7px 0px 5px;
+    margin: 1px;
+    background-image: url(/Project_Files/amazon_logo.png);
+    background-size: cover;
+}
+#location {
+    width: 68.688px;
+    height:50px;
+    padding: 0px 9px 0px 9px;
+    margin: 5px 2px 5px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fa-location-dot {
+    width: 15px;
+    height: 18px;
+    margin: 8px 0px 0px 0px;
+}
+.light-font {
+color:#cccccc;
+font-size: 12px;
+}
+.bold-font {
+color: #ffffff;
+font-size: 14px;
+font-weight: bold;
+}
+
+/* ----------------------------------------Navbar Middle---------------------------------------- */
+
+#search {border:2px solid transparent; border-radius:7px;}
+#search:hover{ border-color:orange;}
+
+#navmiddle{
+    display: flex;
+    align-items: center;
+}
+#search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: right;
+}
+#options {
+    background-color: #cccccc;
+    color: black;
+    width: 50px;
+    height: 40px;
+    border:0px;
+    border-radius: 4px 0px 0px 4px;
+    text-align: center;
+}
+#searchbar{
+    padding: 7px 10px 10px 0px;
+    width: 608.344px;
+    height: 23px;
+    border: 0px;
+    font-size: 14px;
+}
+#icon {
+    background-color: #febd69;
+    width: 45px;
+    height: 40px;
+    font-size: 23px;
+    border-radius: 0px 4px 4px 0px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ----------------------------------------Navbar Right---------------------------------------- */
+#navright {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#keyboard {
+    width: 56.453px;
+    height: 45px;
+    padding: 0px 9px 5px 9px;
+    margin-left: 5px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#lang {
+    background-color: #0F1111;
+    border-color: transparent;
+    width: 55.357px;
+    height: 45px;
+}
+#lang:focus {
+    outline: none; /* Ensures so that clicking on select tag no border comes or remain on it */
+}
+#account{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 114.533px;
+    height: 40px;
+    padding: 0px 9px 10px 9px;
+    margin-left: 2px;
+}
+#orders{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 58.953px;
+    height: 40px;
+    padding: 0px 9px 10px 9px;
+    margin-left: 2px;
+}
+#cart {
+    width: 66px;
+    height: 39px;
+    padding: 0px 9px 11px 9px;
+    margin: 0px 2px 0px 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-cart-shopping {
+    font-size: 30px;
+}
+
+/***************************************************************Top Header End***************************************************************/
+ 
+/*---------------------------------*/
+
+/***************************************************************Bottom Header Start***************************************************************/
+#headerBottom {
+    height:39px;
+    background-color: #232f3e;
+    display: flex;            /*setting up the background in bottom header*/
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#headerBottom a {
+    text-decoration: none;
+    margin:5px 0px 6px 0px;   /*setting up all of the anchor tags with margin padding having no bottom line*/
+    padding: 8px 9px 8px 9px;
+}
+#menu {
+    display    :   flex;
+    justify-content: center; 
+    align-items: center;
+    
+    
+}
+
+.fa-bars{ padding-right: 2px; padding-left: 9px; }
+                    /*setting up the front most anchor tag along with an icon inside a div
+                    having id menu*/
+#menu a {
+ padding-left: 6px;
+ margin: 0px;
+}
+/***************************************************************Bottom Header End***************************************************************/
+
+/*---------------------------------*/
+
+/***************************************************************Main Start***************************************************************/
+/* Hero */
+
+#hero {
+    background-image: linear-gradient(to bottom, transparent 80%, #e3e6e6), url(/Project_Files/HERO.jpg);
+    background-size: cover;
+    height: 600px;
+    width: 100%;                       /*Hero Image*************/
+    position: absolute;
+    z-index: -1;
+
+}
+
+/*~~~~~~~Message box over Hero image start~~~~~~~*/
+#msg-container {
+    background-color: transparent;
+    width:100%;
+    height:50px;
+    position: absolute;
+    z-index: 2;
+    top: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+#msg p, #msg a{
+    display: inline-block;
+    color: #0F1111;
+    font-size: 13px;
+}                                            /*~~~~~~~Message box over Hero image~~~~~~~*/
+#msg a {
+    color:#4c7185;
+    text-decoration: none;
+}
+#msg a:hover {
+    text-decoration: underline;
+    color: orange;
+}
+#msg {
+    width: 1281px;
+    height: 20px;
+    padding: 10px 14px 10px 14px;
+    font-size: small;
+    background-color: white;
+    color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*~~~~~~~Message box over Hero image End~~~~~~~*/
+
+/*~~~~~~~Box of Contents Start~~~~~~~*/
+#boxContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+    row-gap: 25px;
+    flex-wrap: wrap;
+    padding: 20px 0px 20px 0px;
+    position: relative;
+    top:290px;
+}
+
+main {
+    padding-bottom: 290px;  /*To counter the effect of positioning of boxContainer relative to main*/
+}
+
+.box {
+  width: 312.250px;  
+  height: 385px;
+  background-color: white;
+  padding: 20px 0px 15px 0px;
+}
+
+/*--------------------------- boxes--------------------------- */
+
+.box h2{ 
+    color: black; 
+    padding: 0px 20px 0px 20px; 
+    margin-bottom: 10px ;
+}
+
+
+
+.seeMore { text-decoration: none; color:#1e8193; font-size: 13px; display: block; padding: 0px 20px 0px 20px;
+}
+.seeMore:hover{color: orange;}
+
+
+
+.imgContainer {
+    width: 272.250px;
+    height: 303.73px;
+    padding: 0px 20px 0px 20px;
+    margin-bottom: 20px;
+    /* ~~~~~~~~~~~~~~~~~ */
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    align-items: center;
+    gap: 6.825px;
+    flex-wrap: wrap; 
+    
+}
+.imgContainer img, .imgContainer a{
+    height: 115.844px;
+    width: 129.312px;
+    object-fit:cover; /*Fitting image inside a defined width and height withoute letting the original aspect ratio of img get affected*/
+}
+.imgContainer .singleImg{
+    height: 303.719px;
+    width: 272.250px;
+}
+/*~~~~~~~Box of Contents End~~~~~~~*/
+
+/***************************************************************Main End***************************************************************/
+
+
+/***************************************************************Footer Start***************************************************************/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~footer1 end~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+footer {
+    background-color: #37475a;
+}
+
+.footer_1 {
+    text-decoration: none;
+}
+
+#footerClick a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+#footerClick {
+    text-align: center;
+
+    height: 19px;
+    width: 100%;
+    padding: 15px 0px 15px 0px;
+    background-color: #37475a;
+}
+#footerClick p {
+    font-size: 15px;
+    text-decoration: none;
+}
+#footerClick:hover{
+    background-color:#505e6e ;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~footer1 end~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~footer2 start~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.footer_2 {
+    height:400px;
+    background-color: #232f3e;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    
+}
+.footer_2 a {
+    display: block;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #dddddd;
+}
+.footer_2 a:hover {
+    text-decoration: underline;
+}
+
+.footer_2 p{
+    font-size: 16px;
+    font-weight: bold;
+ 
+}
+.footer_2 ul{
+    margin-top: 50px;
+}
+
+.footer_3 {
+    height: 108px;
+    background-color:#232f3e;
+    margin-top: 1px;
+}
+
+#foot_logo {
+    height: 53px;
+    width: 96px;
+    background-image: url(/Project_Files/amazon_logo.png);
+    background-size: cover;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~footer2 end~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~footer3 start~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.footer_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#foot3_Container_box {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 174.500px;
+}
+
+.foot3box {
+    display: flex;
+    border: 1px solid #37475a;
+    border-radius: 4px;
+    padding: 6px 18px 6px 8px;
+    margin-left: 4px;
+}
+.fa-globe{
+    margin-right: 8px;
+}
+
+#foot_box2 p{
+    padding: 0px 7.8px 0px 7.8px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~footer3 end~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~footer4 start~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.footer_4{
+    height:400px;
+    background-color: #131a22;
+    padding: 30px 0px 30px 0px;
+}
+
+.columnsContainerOfFooter4 {
+   
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.columnOfFooter4 {
+    display: inline-block;
+    margin: 0px 30px 0px 30px;
+}
+
+.headingFooter4 { color: #ddddd7; display: block;}
+.contentFooter4 { color: #849191; display: block;}
+
+.column1_footer4_Content a{ text-decoration: none;}
+.column1_footer4_Content:hover a{ text-decoration: underline; } 
+/*This style will only be applied to the <a> tags while the parent (the element with the class) is in the hover state.*/
+
+.column1_footer4_Content {
+    width: 72.297px;
+    height: 81px;
+    padding: 0px 9px 15.59px 9px ;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~footer4 End~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~footer5 start~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#footer_5 {
+    font-size: 12px;
+    background-color: #131a22;
+    padding: 10px 0px 30px 0px;
+}
+
+.footer5Links {
+    text-decoration: none;
+    padding: 0px 7.200px 0px 7.200px ;
+}
+.footer5Links:hover {text-decoration: underline;}
+
+.footer5Text {
+    text-align: center;
+}
+
+#footer5LinkContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-check {
+    color: #0066ff;
+    font-size: 15px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~footer5 start~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/***************************************************************Footer Start***************************************************************/
